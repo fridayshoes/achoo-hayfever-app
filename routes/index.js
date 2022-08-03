@@ -2,9 +2,14 @@ var express = require('express');
 var axios = require("axios").default;
 var router = express.Router();
 
-/* GET home page. */
+/* GET home page. 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Achoo!' });
+}); */
+
+/* GET home page. - React Version */
+router.get('/', function(req, res, next) {
+  res.send('Welcome to Achoo! from Express');
 });
 
 /* API to GET pollen by place. */

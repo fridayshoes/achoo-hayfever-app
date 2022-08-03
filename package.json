@@ -5,9 +5,9 @@
   "scripts": {
     "start": "nodemon ./bin/www",
     "cypress:open": "cypress open",
-    "test:cypress": "cypress run",
+    "test:integration": "cypress run",
     "test:unit": "jest",
-    "test:all": "npm run test:unit && npm run test:cypress"
+    "test:all": "npm run test:unit && npm run test:integration"
   },
 
   "dependencies": {

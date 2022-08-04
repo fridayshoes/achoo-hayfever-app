@@ -14,7 +14,7 @@ var pollenPlace = {
 axios.request(pollenPlace).then(function (response) {
 	console.log("Pollen Place");
   console.log(response.data.data[0].Risk);
-  res.send(response.data.data[0]);
+  res.send(response.data.data);
 }).catch(function (error) {
 	console.error(error);
 });

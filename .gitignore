@@ -68,3 +68,4 @@ cypress/videos
 .DS_Store
 cypress/.DS_Store
 
+twilio.env

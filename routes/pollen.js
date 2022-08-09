@@ -2,14 +2,6 @@ var express = require('express');
 var axios = require("axios").default;
 var router = express.Router();
 
-// let location = ""
-// /* GET users listing. */
-// router.post('/', function(req, res, next) {
-//   const location = req.body.value
-//   console.log(location)
-//   res.json(req.body.value);
-// });
-
 /* GET pollen listing. */
 router.post('/', function(req, res, next) {
   /* API to GET pollen by place. */

@@ -1,10 +1,6 @@
 const User = require("../models/user");
 
 const UsersController = {
-  // New: (req, res) => {
-  //   res.render("users/new", {});
-  // },
-
   Create: (req, res) => {
     const userData = req.body
     console.log("controller1")
@@ -25,7 +21,7 @@ const UsersController = {
         throw err;
       }
       if (existingUser == null) {
-        user.save((err) => {
+        user.save((err) => { // saves to database
           if (err) {
             throw err;
           }

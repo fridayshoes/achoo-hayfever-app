@@ -10,13 +10,16 @@ const UsersController = {
     console.log("controller1")
     console.log(userData)
     const user = new User({
-      email: email
+      email: req.body.email,
+      mobile: req.body.mobile,
+      location: req.body.location,
+      pollen: req.body.pollen
     });
     console.log("controller2")
     console.log({user})
-    console.log(user.id)
-    console.log(user.email)
+    // console.log(user.id)
     // console.log(user.email)
+    // console.log(res)
     User.findOne({email: user.email}, (err, existingUser) => {
       if (err) {
         throw err;
@@ -26,7 +29,8 @@ const UsersController = {
           if (err) {
             throw err;
           }
-          res.status(201).redirect("/error");
+          // console.log(res)
+          res.status(201).send ("/");
         });
       } else {
         res.redirect("/");

@@ -8,14 +8,16 @@ const UsersController = {
   Create: (req, res) => {
     const userData = req.body
     console.log("controller1")
-    // console.log(userData)
+    console.log(userData)
     const user = new User({
-      email: req.body.value
+      email: req.body.email,
+      mobile: req.body.mobile,
+      location: req.body.location,
+      pollen: req.body.pollen
     });
     console.log("controller2")
-    // console.log({user})
+    console.log({user})
     // console.log(user.id)
-    // console.log(user.email)
     // console.log(user.email)
     // console.log(res)
     User.findOne({email: user.email}, (err, existingUser) => {

@@ -17,8 +17,8 @@ var port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
 /**
- * Connect to MongoDB
- **/
+ * Connect to MongoDB - Local MongoDB config
+ 
 
 var mongoDbUrl = process.env.MONGODB_URL || "mongodb://0.0.0.0/achoo";
 mongoose.connect(mongoDbUrl, {
@@ -27,7 +27,37 @@ mongoose.connect(mongoDbUrl, {
 });
 
 var db = mongoose.connection;
-db.on("error", console.error.bind(console, "MongoDB connection error:"));
+db.on("error", console.error.bind(console, "MongoDB connection error:")); **/
+
+
+/**
+ * Connect to MongoDB - Atlas Cloud MongoDB config
+ **/
+
+ const url = `mongodb+srv://fridayshoes:TJmsiJEqcrSDceLh@cluster0.8ny2yip.mongodb.net/?`;
+
+ const connectionParams={
+     useNewUrlParser: true,
+     useUnifiedTopology: true
+    //  serverApi: ServerApiVersion.v1
+ }
+ mongoose.connect(url,connectionParams)
+     .then( () => {
+         console.log('Connected to the database ')
+     })
+     .catch( (err) => {
+         console.error(`Error connecting to the database. n${err}`);
+     }) 
+
+ /**const { MongoClient, ServerApiVersion } = require('mongodb');
+ const uri = "mongodb+srv://fridayshoes:TJmsiJEqcrSDceLh@cluster0.8ny2yip.mongodb.net/?retryWrites=true&w=majority";
+ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 });
+ client.connect(err => {
+   const collection = client.db("test").collection("achoo");
+   // perform actions on the collection object
+   client.close();
+ }); */
+
 
 /**
  * Create HTTP server.

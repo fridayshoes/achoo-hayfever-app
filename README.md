@@ -1,19 +1,21 @@
 # ACHOO!-hayfever-app
 
-A location based app that notifies you when pollen count levels reach high levels (needs rewriting).
+A location based app that notifies you with an SMS when pollen count levels reach dangerously sneezey levels in your area.
 
 # TECHNOLOGIES used
 
 - [Express](https://expressjs.com/) web framework for Node.js.
-- [Nodemon](https://nodemon.io/) to reload the server automatically.
-- [Jade](https://jade-lang.com/api) to render view templates.
+- [React] (https://reactjs.org/) - for frontend
+- [MongoDB] fot local database testing
+- [MongoDB Atlas](https://www.mongodb.com/atlas/database) for AWS cloud database
 - [Mongoose](https://mongoosejs.com) to model objects in MongoDB.
+- [Nodemon](https://nodemon.io/) to reload the server automatically.
 - [ESLint](https://eslint.org) for linting.
 - [Jest](https://jestjs.io/) for testing.
 - [Cypress](https://www.cypress.io/) for end-to-end testing.
-- [MongoDB Atlas](https://www.mongodb.com/atlas/database) for AWS cloud database
-- [Heroku](https://www.heroku.com/) to deploy the app.
-- [React] (https://reactjs.org/)
+- [Axios](https://github.com/axios/axios) for pollen api parsing
+- [Ambee](https://www.getambee.com/) pollen and climate API data.
+- [Twilio](https://www.twilio.com/) for SMS notifications.
 
 # Cypress for integration testing
 
@@ -48,4 +50,50 @@ The application has been built on Express.js. To install clone the repo and then
 npm install
 ```
 
-### Running the program
+### Running the program using Atlas Cloud MongoDB Database with Twillio SMS functionality
+
+- Run Express Server using:
+
+```
+npm start
+```
+
+- Run React Client using:
+
+```
+npm start
+```
+
+### Running the program using Local MongoDB Database
+
+- First change DB config to local config in bin/www
+
+- On WSL2, start database using:
+
+```
+sudo service mongodb start
+```
+
+or
+
+```
+sudo mongod --dbpath ~/data/db
+```
+
+- Run React Client using:
+
+```
+npm start
+```
+
+- Run Express Server using:
+
+```
+npm start
+```
+
+- Run React Client using:
+
+```
+npm start
+```

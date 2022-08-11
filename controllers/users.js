@@ -25,8 +25,10 @@ const UsersController = {
           if (err) {
             throw err;
           }
-          // console.log(res)
-          res.status(201).send ("/");
+          console.log("response from express")
+          console.log(res)
+          // res.status(201).send("");
+          res.json( req.body )
         });
       } else {
         res.redirect("/");

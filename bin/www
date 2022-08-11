@@ -34,12 +34,12 @@ db.on("error", console.error.bind(console, "MongoDB connection error:")); **/
  * Connect to MongoDB - Atlas Cloud MongoDB config
  **/
 
- const url = `mongodb+srv://fridayshoes:TJmsiJEqcrSDceLh@cluster0.8ny2yip.mongodb.net/?retryWrites=true&w=majority;`;
+ const url = `mongodb+srv://fridayshoes:TJmsiJEqcrSDceLh@cluster0.8ny2yip.mongodb.net/?`;
 
  const connectionParams={
      useNewUrlParser: true,
-     useUnifiedTopology: true,
-     serverApi: ServerApiVersion.v1
+     useUnifiedTopology: true
+    //  serverApi: ServerApiVersion.v1
  }
  mongoose.connect(url,connectionParams)
      .then( () => {

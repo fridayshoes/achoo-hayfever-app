@@ -1,4 +1,4 @@
-# ACHOO!-hayfever-app
+# ACHOO!-hayfever-app (EXPRESS-BACK-END)
 
 A location based app that notifies you with an SMS when pollen count levels reach dangerously sneezey levels in your area.
 
@@ -97,3 +97,18 @@ npm start
 ```
 npm start
 ```
+
+### SCREENSHOTS & DIAGRAMS
+
+In 'Diagrams' folder.
+
+### COLLABORATORS
+
+JENNIE - https://github.com/Jenniered
+DAVID - https://github.com/fridayshoes
+EPHRON - https://github.com/Ephfullstack
+DANIEL - https://github.com/danielotf
+
+# LINK TO FRONT-END
+
+https://github.com/fridayshoes/achoo-hayfever-client-react

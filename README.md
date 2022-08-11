@@ -97,3 +97,18 @@ npm start
 ```
 npm start
 ```
+
+### SCREENSHOTS 
+
+ # TRELLO WALL FOR PLANNING
+
+ [![Screenshot-2022-08-11-at-12-23-24.png](https://i.postimg.cc/3J1JD16M/Screenshot-2022-08-11-at-12-23-24.png)](https://postimg.cc/gnwPCVm4) 
+
+# APP SCREENSHOTS 
+ 
+
+ ### COLLABORATORS
+  JENNIE - https://github.com/Jenniered
+  DAVID - https://github.com/fridayshoes 
+  EPHRON - https://github.com/Ephfullstack
+  DANIEL - https://github.com/danielotf

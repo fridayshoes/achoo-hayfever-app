@@ -106,7 +106,6 @@ npm start
 npm start
 ```
 
-
 ### PLANNING & DIAGRAMS
 
 ![](diagrams/app-overview.png)
@@ -115,14 +114,12 @@ npm start
 ![](diagrams/twilio-diagram.png)
 ![](diagrams/user-details-data-flow.png)
 
-
 ### COLLABORATORS
 
-JENNIE - https://github.com/Jenniered
-DAVID - https://github.com/fridayshoes
-EPHRON - https://github.com/Ephfullstack
-DANIEL - https://github.com/danielotf
-
+- JENNIE - https://github.com/Jenniered
+- DAVID - https://github.com/fridayshoes
+- EPHRON - https://github.com/Ephfullstack
+- DANIEL - https://github.com/danielotf
 
 # LINK TO FRONT-END REPO :
 

@@ -106,9 +106,15 @@ npm start
 npm start
 ```
 
-### SCREENSHOTS & DIAGRAMS
 
-In 'Diagrams' folder.
+### PLANNING & DIAGRAMS
+
+![](diagrams/app-overview.png)
+![](diagrams/pollen-api-data-flow.png)
+![](diagrams/trello-wall.png)
+![](diagrams/twilio-diagram.png)
+![](diagrams/user-details-data-flow.png)
+
 
 ### COLLABORATORS
 
@@ -117,6 +123,7 @@ DAVID - https://github.com/fridayshoes
 EPHRON - https://github.com/Ephfullstack
 DANIEL - https://github.com/danielotf
 
-# LINK TO FRONT-END
+
+# LINK TO FRONT-END REPO :
 
 https://github.com/fridayshoes/achoo-hayfever-client-react

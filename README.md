@@ -15,7 +15,7 @@ A location based app that notifies you with an SMS when pollen count levels reac
 Here's a presentation demo of our app in action
 
 <div align="center">
-  <a href="https://youtu.be/tF9nt6tll14?t=798"> <img src="https://github.com/fridayshoes/achoo-hayfever-server-react/raw/main/screenshots/Achoo_YouTube.jpg" width="650"> </a>
+  <a href="https://youtu.be/tF9nt6tll14?t=798"> <img src="https://github.com/fridayshoes/achoo-hayfever-server-express/raw/main/screenshots/Achoo_YouTube.jpg" width="650"> </a>
 </div>
 
 # TECHNOLOGIES used
